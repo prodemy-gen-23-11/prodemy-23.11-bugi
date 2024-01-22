@@ -22,7 +22,7 @@ body {
 }
 
 #navbar {
-    background-color: aquamarine;
+    background-color: aliceblue;
     position: relative;
     height: 3em;
     padding: 1em 2em 0;
@@ -34,7 +34,6 @@ body {
 }
 
 .footer-about {
-    background-color: lightseagreen;
     display: inline-block;
     position: relative;
     vertical-align: top;
@@ -43,7 +42,6 @@ body {
 }
 
 .footer-links {
-    background-color: lightseagreen;
     display: inline-block;
     position: relative;
     vertical-align: top;
