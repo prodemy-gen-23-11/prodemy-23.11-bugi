@@ -91,7 +91,7 @@ body {
     width: fit-content;
     padding: 0.8em 1em;
     margin: 1em 0;
-    transition: background-color 600ms, border 600ms;
+    transition: background-color 500ms;
 }
 
 .banner-btn:hover{
