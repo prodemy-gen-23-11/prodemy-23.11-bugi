@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button {
+        @apply h-10;
+        @apply w-48;
+        @apply rounded-full;
+        @apply text-center;
+    }
+
+    .color-picker {
+        @apply bg-gray-200;
+        @apply w-10;
+        @apply h-10;
+        @apply rounded-full;
+        @apply inline-block;
+    }
+
+    .image-thumb-div{
+        @apply bg-gray-200;
+        @apply inline-block;
+        @apply h-32;
+        @apply w-32;
+        @apply mx-[1.5%];
+        @apply rounded-lg;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-gill">
+    <!-- navbar -->
+    <div id="navbar" class="relative h-fit py-3.5 px-8 shadow-sm">
+        <div class="flex flex-row flex-wrap justify-center items-center md:justify-between">
+            <h2 id="title" class="inline-block m-0 text-sky-600 text-3xl font-bold">Shopcart</h2>
+            <div class="inline-flex flex-row flex-wrap justify-center items-baseline md:flex-nowrap md:justify-between">
+                <form class="font-gill text-xl py-0 px-4" action="">
+                    <select class="font-gill text-inherit text-sky-600 py-1 px-2.5 border-none rounded-lg">
+                        <option class="bg-cyan-300 text-sky-600" disabled selected value="categories">Categories</option>
+                        <option class="bg-cyan-300 text-sky-600" value="furniture">Furniture</option>
+                        <option class="bg-cyan-300 text-sky-600" value="handbag">Hand Bag</option>
+                        <option class="bg-cyan-300 text-sky-600" value="books">Books</option>
+                        <option class="bg-cyan-300 text-sky-600" value="tech">Tech</option>
+                        <option class="bg-cyan-300 text-sky-600" value="sneakers">Sneakers</option>
+                        <option class="bg-cyan-300 text-sky-600" value="travel">Travel</option>
+                    </select>
+                </form>
+                <a class="text-xl text-sky-600 py-0 px-4 hover:font-bold" href="#">Deals</a>
+                <a class="text-xl text-sky-600 py-0 px-4 hover:font-bold" href="#">What's New</a>
+                <a class="text-xl text-sky-600 py-0 px-4 hover:font-bold" href="#">Delivery</a>
+                <form id="search-bar" class="text-sm py-0 px-4" action="">
+                    <input class="bg-zinc-100 font-gill text-3.5 py-1 px-4 border-none rounded-lg placeholder:text-gray-500 placeholder:text-base" type="text" placeholder="Search Product">
+                </form>
+                <!-- <i class="gg-user"></i> -->
+                <a class="text-xl text-sky-600 py-0 px-4 hover:font-bold account" href="#">Account</a>
+                <!-- <i class="gg-shopping-cart"></i> -->
+                <a class="text-xl text-sky-600 py-0 px-4 hover:font-bold cart" href="#">Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <article id="content" class="relative h-fit p-8">
+        <div id="content-container" class="flex flex-col justify-center w-full 
+                                            md:flex-row md:justify-between">
+            <!-- image -->
+            <div id="image-container" class="inline-flex flex-col w-full
+                                                md:w-[45%]">
+                <div class="bg-gray-200 h-[25rem] md:h-[30rem] w-full rounded-2xl mb-6">
+                    <img id="image-main" class="h-full w-[30rem] m-auto hover:scale-110 duration-300" 
+                    src="https://asset.morefurniture.id/PROCELLA/PILLO/1.webp"
+                    alt="">
+                </div>
+                <div class="h-40 w-full overflow-auto whitespace-nowrap">
+                    <div onclick="focusImage(1)" class="image-thumb-div ml-0 border-solid border-2 border-gray-400">
+                        <img class="image-thumb h-full w-full hover:scale-110 duration-300" 
+                        src="https://asset.morefurniture.id/PROCELLA/PILLO/1.webp"
+                        alt="">
+                    </div>
+                    <div onclick="focusImage(2)" class="image-thumb-div">
+                        <img class="image-thumb h-full w-full hover:scale-110 duration-300" 
+                        src="https://asset.morefurniture.id/PROCELLA/PILLO/2.webp"
+                        alt="">
+                    </div>
+                    <div onclick="focusImage(3)" class="image-thumb-div">
+                        <img class="image-thumb h-full w-full hover:scale-110 duration-300" 
+                        src="https://asset.morefurniture.id/PROCELLA/PILLO/15.webp"
+                        alt="">
+                    </div>
+                    <div onclick="focusImage(4)" class="image-thumb-div">
+                        <img class="image-thumb h-full w-full hover:scale-110 duration-300" 
+                        src="https://asset.morefurniture.id/PROCELLA/PILLO/16.webp"
+                        alt="">
+                    </div>
+                    <div onclick="focusImage(5)" class="image-thumb-div">
+                        <img class="image-thumb h-full w-full hover:scale-110 duration-300" 
+                        src="https://asset.morefurniture.id/PROCELLA/PILLO/3.webp"
+                        alt="">
+                    </div>
+                    <div onclick="focusImage(6)" class="image-thumb-div">
+                        <img class="image-thumb h-full w-full hover:scale-110 duration-300" 
+                        src="https://asset.morefurniture.id/PROCELLA/PILLO/5.webp"
+                        alt="">
+                    </div>
+                    <div onclick="focusImage(7)" class="image-thumb-div mr-0">
+                        <img class="image-thumb h-full w-full hover:scale-110 duration-300" 
+                        src="https://asset.morefurniture.id/PROCELLA/PILLO/7.webp"
+                        alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- text -->
+            <div id="text-container" class="flex flex-col w-full text-center mt-8
+                                            md:inline-flex md:text-start md:w-[45%] md:mt-0 md:pr-28">
+                <h1 class="font-extrabold text-3xl">Sofa Pillo Canvas</h1>
+                <p class="pt-2">Sofa 2 dudukan, dengan chaise longue/vissle navy</p>
+                <p class="pt-1">★★★★★ (121)</p>
+                <hr class="my-4">
+                <h2 class="font-bold text-2xl">Rp1.268.000 - Rp3.135.000</h2>
+                <p class="text-sm pt-1">Cicilan 0% mulai dari Rp 541.250/bulan</p>
+                <hr class="my-4">
+                <h3 class="font-bold text-2xl">Warna</h3>
+                <ul class="pt-1">
+                    <li class="color-picker bg-sky-950 mr-2 hover:scale-110 hover:border-2 duration-300 cursor-pointer" value="navy"></li>
+                    <li class="color-picker bg-gray-400 mr-2 hover:scale-110 hover:border-2 duration-300 cursor-pointer" value="grey"></li>
+                    <li class="color-picker bg-amber-100 mr-2 hover:scale-110 hover:border-2 duration-300 cursor-pointer" value="cream"></li>
+                    <li class="color-picker bg-yellow-950 mr-2 hover:scale-110 hover:border-2 duration-300 cursor-pointer" value="brown"></li>
+                </ul>
+                <hr class="my-4">
+
+                <div class="flex flex-row justify-around py-2 h-10 w-32 bg-gray-200 rounded-full mb-4 mx-auto 
+                            md:mx-0">
+                    <p class="inline-block font-bold cursor-pointer">-</p>
+                    <p class="inline-block font-bold">1</p>
+                    <p class="inline-block font-bold cursor-pointer">+</p>
+                </div>
+
+                <div class="flex flex-row justify-center mb-4 md:justify-between">
+                    <button class="group button bg-sky-600 mr-1 hover:bg-sky-300 duration-300 cursor-pointer">
+                        <p class="text-white group-hover:text-black">Buy Now</p>
+                    </button>
+                    <button class="group button border-sky-600 border-2 ml-1 hover:bg-sky-300 duration-300 cursor-pointer">
+                        <p class="text-black">Add to Cart</p>
+                    </button>
+                </div>
+                
+                <div class="mt-4 md:mt-20">
+                    <div class="h-fit w-full border-2 border-gray-200 py-2 pl-8 pr-2">
+                        <p class="font-bold">Free Delivery</p>
+                        <p class=""><u>Enter your postal code for delivery availability</u></p>
+                    </div>
+                    <div class="h-fit w-full border-2 border-gray-200 border-t-0 py-2 pl-8">
+                        <p class="font-bold">Return Delivery</p>
+                        <p class="">Free 30days Delivery Returns. <u>Details</u></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- javascript -->
+    <script src="js/detailScript.js"></script>
+</body>
+</html>
