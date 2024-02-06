@@ -13,7 +13,7 @@ function ProductCard(props) {
             </div>
             <p className="mt-2">{props.desc}</p>
             <p className="mt-1">★★★★★ (121)</p>
-            <button className="bg-white mt-2 border border-solid border-black rounded-full hover:bg-gray-200 hover:border-2 duration-300">Add to Cart</button>
+            <button className=" bg-white mt-2 border border-solid border-black rounded-full hover:bg-gray-200 hover:border-2 hover:border-black duration-300">Add to Cart</button>
         </div>
     );
 }
