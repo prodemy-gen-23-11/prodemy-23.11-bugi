@@ -1,10 +1,12 @@
-import React, { Children } from "react";
+import React from "react";
 
-function Content(){
-    return(
-        <div className="py-4 px-8">
-            {/* {Children}; */}
-        </div>
+function Content({children}) {
+    return (
+        <>
+            <div className="py-4 px-8 my-2">
+                {children}
+            </div>
+        </>
     );
 }
 
