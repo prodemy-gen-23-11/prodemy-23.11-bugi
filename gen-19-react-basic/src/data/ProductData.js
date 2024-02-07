@@ -1,4 +1,5 @@
-const productData = [
+export const productTitle = "Todays Best Deals For You!"
+export const productData = [
     {
         id: 1,
         name: "Sofa Pillo Canvas",
@@ -28,5 +29,3 @@ const productData = [
         imageUrl: "https://asset.morefurniture.id/PROCELLA/BEANBAG/TRIANGLE/Moana-Donker-3.webp"
     }
 ];
-
-export default productData;

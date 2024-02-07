@@ -1,4 +1,5 @@
-const categoryData = [
+export const categoryTitle = "Shop Our Top Categories"
+export const categoryData = [
     {
         id: 1,
         name: "Sofa",
@@ -30,5 +31,3 @@ const categoryData = [
         imageUrl: "https://ifurnholic.com/media/product/1676443420-1_king.jpg"
     },
 ];
-
-export default categoryData;
