@@ -12,8 +12,8 @@ function DetailPage() {
         <>
             <Content>
                 <DetailSection>
-                    <PreviewProduct product={productData[id-1]} />
-                    <DetailDesc product={productData[id-1]} />
+                    <PreviewProduct product={productData.find((item) => item.id == id)} />
+                    <DetailDesc product={productData.find((item) => item.id == id)} />
                 </DetailSection>
             </Content>
         </>

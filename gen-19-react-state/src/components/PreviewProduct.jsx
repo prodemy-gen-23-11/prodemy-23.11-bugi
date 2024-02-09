@@ -19,7 +19,7 @@ function PreviewProduct({ product }) {
             </div>
             <div className="h-40 w-full overflow-auto whitespace-nowrap">
                 {product.previews.map((url) =>
-                    <PreviewThumb imageSrc={url} onClick={() => changeSrc(url)} />
+                    <PreviewThumb imageSrc={url} onClick={changeSrc} />
                 )}
             </div>
         </div>
