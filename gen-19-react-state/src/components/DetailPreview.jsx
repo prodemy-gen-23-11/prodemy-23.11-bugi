@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import PreviewThumb from "./PreviewThumb";
+import DetailThumb from "./DetailThumb";
 
-function PreviewProduct({ product }) {
+function DetailPreview({ product }) {
     const [mainSrc, setSrc] = useState(product.previews[0]);
 
     const changeSrc = (newSrc) => {
@@ -19,11 +19,11 @@ function PreviewProduct({ product }) {
             </div>
             <div className="h-40 w-full overflow-auto whitespace-nowrap">
                 {product.previews.map((url) =>
-                    <PreviewThumb imageSrc={url} onClick={changeSrc} />
+                    <DetailThumb imageSrc={url} onClick={changeSrc} />
                 )}
             </div>
         </div>
     );
 }
 
-export default PreviewProduct;
+export default DetailPreview;

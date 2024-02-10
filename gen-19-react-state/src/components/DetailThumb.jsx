@@ -1,6 +1,6 @@
 import React from "react";
 
-function PreviewThumb(props) {
+function DetailThumb(props) {
     const {imageSrc, onClick} = props;
 
     return (
@@ -12,4 +12,4 @@ function PreviewThumb(props) {
     );
 }
 
-export default PreviewThumb;
+export default DetailThumb;

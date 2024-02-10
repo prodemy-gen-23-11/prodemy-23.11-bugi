@@ -2,7 +2,7 @@ import React from "react";
 import Content from "../layouts/Content";
 import DetailSection from "../layouts/DetailSection";
 import {productData} from "../data/ProductData";
-import PreviewProduct from "../components/PreviewProduct";
+import DetailPreview from "../components/DetailPreview";
 import DetailDesc from "../components/DetailDesc";
 
 function DetailPage() {
@@ -12,7 +12,7 @@ function DetailPage() {
         <>
             <Content>
                 <DetailSection>
-                    <PreviewProduct product={productData.find((item) => item.id == id)} />
+                    <DetailPreview product={productData.find((item) => item.id == id)} />
                     <DetailDesc product={productData.find((item) => item.id == id)} />
                 </DetailSection>
             </Content>
