@@ -24,7 +24,7 @@ function HomePage() {
     const products = useSWR("http://localhost:3000/products", getData);
     const categories = useSWR("http://localhost:3000/category", getData);
 
-    return (
+    if (!products.isLoading && !categories.isLoading) return (
         <>
             <Navbar />
             <Banner />

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import DetailThumb from "../components/DetailThumb";
 
-function DetailPreview({ product }) {
-    const [mainSrc, setSrc] = useState(product.previews[0]);
+function DetailPreview({ productPreviews }) {
+    console.log(productPreviews);
+    const [mainSrc, setSrc] = useState(productPreviews[0]);
 
     const changeSrc = (newSrc) => {
         setSrc(newSrc);
@@ -18,7 +19,7 @@ function DetailPreview({ product }) {
                     alt="" />
             </div>
             <div className="h-40 w-full overflow-auto whitespace-nowrap">
-                {product.previews.map((url) =>
+                {productPreviews?.map((url) =>
                     <DetailThumb imageSrc={url} onClick={() => changeSrc(url)} />
                 )}
             </div>

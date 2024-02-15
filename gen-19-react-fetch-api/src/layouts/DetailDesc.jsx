@@ -1,17 +1,17 @@
 import React from "react";
 
-function DetailDesc({ product }) {
+function DetailDesc({ productName, productDesc, productPrice, productPriceMax}) {
     return (
         <div id="desc-container"
             className="flex flex-col w-full text-center mt-8
                         md:inline-flex md:text-start md:w-[45%] md:mt-0 md:pr-28">
-            <h1 className="font-extrabold text-3xl">{product.name}</h1>
-            <p className="pt-2">{product.desc}</p>
+            <h1 className="font-extrabold text-3xl">{productName}</h1>
+            <p className="pt-2">{productDesc}</p>
             <p className="pt-1">★★★★★ (121)</p>
 
             <hr className="my-4" />
 
-            <h2 className="font-bold text-2xl">{product.price} - {product.priceMax}</h2>
+            <h2 className="font-bold text-2xl">{productPrice} - {productPriceMax}</h2>
             <p className="text-sm pt-1">Cicilan 0% mulai dari Rp 541.250/bulan</p>
 
             <hr className="my-4" />
