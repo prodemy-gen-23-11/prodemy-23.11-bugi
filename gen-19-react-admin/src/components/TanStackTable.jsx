@@ -13,19 +13,17 @@ import {
 function TanStackTable() {
     const getData = (url) => axios.get(url).then((response) => response.data);
 
-    const { data, error, isLoading } = useSWR("http://localhost:3000/products", getData);
-
-    const [products, setData] = useState(data);
-
-    const changeData = (newData) => {
-        setData(newData);
-    };
+    const { data, error, isLoading, mutate } = useSWR("http://localhost:3000/products", getData);
 
     const columnHelper = createColumnHelper();
 
     const columns = [
         columnHelper.accessor("id", {
-            cell: (info) => <span>{info.getValue()}</span>,
+            cell: (info) => (
+                <div className="text-center">
+                    <p>{info.getValue()}</p>
+                </div>
+            ),
             header: "ID"
         }),
         columnHelper.accessor("imageUrl", {
@@ -35,24 +33,19 @@ function TanStackTable() {
             header: "Image"
         }),
         columnHelper.accessor("name", {
-            cell: (info) => <span>{info.getValue()}</span>,
             header: "Name"
         }),
         columnHelper.accessor("desc", {
-            cell: (info) => <span>{info.getValue()}</span>,
             header: "Description"
         }),
         columnHelper.accessor("price", {
-            cell: (info) => <span>{info.getValue()}</span>,
             header: "Current Price"
         }),
         columnHelper.accessor("priceMax", {
-            cell: (info) => <span>{info.getValue()}</span>,
             header: "Normal Price"
         }),
         ,
         columnHelper.accessor("", {
-
             header: "Action"
         })
     ]
