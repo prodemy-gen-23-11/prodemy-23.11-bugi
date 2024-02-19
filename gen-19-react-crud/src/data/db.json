@@ -1,0 +1,152 @@
+{
+  "products": [
+    {
+      "name": "Sofa Pillo Towa",
+      "desc": "Sofa 2 dudukan, dengan chaise longue/vissle 4 pilihan warna",
+      "priceMax": "Rp3.135.000",
+      "price": "Rp1.268.000",
+      "imageUrl": "https://asset.morefurniture.id/PROCELLA/PILLO/2.webp",
+      "previews": [
+        "https://asset.morefurniture.id/PROCELLA/PILLO/1.webp",
+        "https://asset.morefurniture.id/PROCELLA/PILLO/2.webp",
+        "https://asset.morefurniture.id/PROCELLA/PILLO/15.webp",
+        "https://asset.morefurniture.id/PROCELLA/PILLO/16.webp",
+        "https://asset.morefurniture.id/PROCELLA/PILLO/3.webp",
+        "https://asset.morefurniture.id/PROCELLA/PILLO/5.webp",
+        "https://asset.morefurniture.id/PROCELLA/PILLO/7.webp"
+      ],
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Procella Sofabed Cloud",
+      "desc": "Sofa 2 dudukan yang dapat dibuka menjadi sofa bed, dengan 2 pilihan warna",
+      "price": "Rp2.708.000",
+      "priceMax": "Rp4.672.000",
+      "imageUrl": "https://asset.morefurniture.id/PROCELLA/CLOUD/p-399-1699341224-7.webp",
+      "previews": [
+        "https://asset.morefurniture.id/PROCELLA/CLOUD/p-399-1699341224-8.webp",
+        "https://asset.morefurniture.id/PROCELLA/CLOUD/p-399-1699341224-7.webp",
+        "https://asset.morefurniture.id/PROCELLA/CLOUD/p-399-1699341223-5.webp",
+        "https://asset.morefurniture.id/PROCELLA/CLOUD/p-399-1699341211-3.webp",
+        "https://asset.morefurniture.id/PROCELLA/CLOUD/p-399-1699341210-2.webp",
+        "https://asset.morefurniture.id/PROCELLA/CLOUD/ss-399-1704073393-8.webp"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Procella Sofabed Chiffon",
+      "desc": "Terbuat dari material busa dan canvas premium yang memberikan kenyamanan duduk untuk waktu yang lama serta tahan lama",
+      "price": "Rp1.954.000",
+      "priceMax": "Rp3.500.000",
+      "imageUrl": "https://asset.morefurniture.id/PROCELLA/CHIFFON/cm-1.webp",
+      "previews": [
+        "https://asset.morefurniture.id/PROCELLA/CHIFFON/cm-2.webp",
+        "https://asset.morefurniture.id/PROCELLA/CHIFFON/cm-1.webp",
+        "https://asset.morefurniture.id/PROCELLA/CHIFFON/cm-3.webp",
+        "https://asset.morefurniture.id/PROCELLA/CHIFFON/ny-3.webp",
+        "https://asset.morefurniture.id/PROCELLA/CHIFFON/ny-1.webp",
+        "https://asset.morefurniture.id/PROCELLA/CHIFFON/ny-2.webp"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Bean Bag Moana Triangle Size Xtra Large",
+      "desc": "Sofa bean bag cocok untuk bersantai di rumah, villa, cafe, dan tempat lainnya",
+      "price": "Rp641.000",
+      "priceMax": "Rp1.057.000",
+      "imageUrl": "https://asset.morefurniture.id/PROCELLA/BEANBAG/TRIANGLE/Moana-Donker-3.webp",
+      "previews": [
+        "https://asset.morefurniture.id/PROCELLA/BEANBAG/TRIANGLE/Moana-Donker-1.webp",
+        "https://asset.morefurniture.id/PROCELLA/BEANBAG/TRIANGLE/Moana-Donker-3.webp",
+        "https://asset.morefurniture.id/PROCELLA/BEANBAG/TRIANGLE/Moana-Abu-1.webp",
+        "https://asset.morefurniture.id/PROCELLA/BEANBAG/TRIANGLE/Moana-Abu-3.webp",
+        "https://asset.morefurniture.id/PROCELLA/BEANBAG/TRIANGLE/Cream-1.webp",
+        "https://asset.morefurniture.id/PROCELLA/BEANBAG/TRIANGLE/Cream-3.webp"
+      ]
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Sofa",
+      "imageUrl": "https://ifurnholic.com/media/product/1675759754-biru_(3)_feed.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Meja",
+      "imageUrl": "https://ifurnholic.com/media/product/1691734833-2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Kursi",
+      "imageUrl": "https://ifurnholic.com/media/product/set-meja-makan-marsha-megan-chair-ivory-natural-main.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Rak Buku",
+      "imageUrl": "https://ifurnholic.com/media/product/1-146.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Lemari",
+      "imageUrl": "https://ifurnholic.com/media/product/alfonso-wardrobe-3-doors-ivory-brown.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Kasur",
+      "imageUrl": "https://ifurnholic.com/media/product/1676443420-1_king.jpg"
+    }
+  ],
+  "footer": [
+    {
+      "id": "1",
+      "name": "Categories",
+      "links": [
+        "Sofa",
+        "Meja",
+        "Kursi",
+        "Rak Buku",
+        "Lemari",
+        "Kasur"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "About Us",
+      "links": [
+        "About Shopcart",
+        "News & Blog",
+        "Help",
+        "Press Center",
+        "Shop by Location",
+        "Shopcart Brands",
+        "Affiliate & Partners",
+        "Ideas & Guides"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Services",
+      "links": [
+        "Gift Card",
+        "Mobile App",
+        "Shipping & Delivery",
+        "Order Pickup",
+        "Account Signup"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Help",
+      "links": [
+        "Shopcart Help",
+        "Returns",
+        "Track Orders",
+        "Contact Us",
+        "Feedback",
+        "Security & Fraud"
+      ]
+    }
+  ]
+}

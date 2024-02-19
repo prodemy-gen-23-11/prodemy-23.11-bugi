@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .color-picker {
+      @apply w-10;
+      @apply h-10;
+      @apply rounded-full;
+      @apply bg-gray-200;
+      @apply inline-block;
+  }
+
+  .button {
+      @apply h-10;
+      @apply w-48;
+      @apply rounded-full;
+      @apply text-center;
+  }
+  
+  .button-admin {
+      @apply w-20;
+      @apply h-10;
+      @apply px-2;
+      @apply text-zinc-50;
+      @apply font-semibold;
+      @apply bg-sky-400;
+      @apply rounded-lg;
+  }
+
+  .image-thumb-div{
+    @apply bg-gray-200;
+    @apply inline-block;
+    @apply h-32;
+    @apply w-32;
+    @apply mx-[1.5%];
+    @apply rounded-lg;
+  }
+}
+
+:root {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
