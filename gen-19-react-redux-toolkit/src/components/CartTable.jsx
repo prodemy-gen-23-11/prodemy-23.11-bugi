@@ -8,16 +8,16 @@ function CartTable() {
 
     const { cartData } = useSelector((state) => state.cart);
 
-    function quantityIncrease() {
-        dispatch(quantityIncreaseAction(...cartData));
+    const quantityIncrease = (id) => {
+        dispatch(quantityIncreaseAction({id: id}));
     }
 
-    function quantityDecrease() {
-        dispatch(quantityDecreaseAction(...cartData));
+    const quantityDecrease = (id) => {
+        dispatch(quantityDecreaseAction({id: id}));
     }
 
-    function removeItem() {
-        dispatch(removeItemAction(...cartData));
+    const removeItem = (id) => {
+        dispatch(removeItemAction({id: id}));
     }
 
     let totalPrice = 0;
@@ -58,11 +58,11 @@ function CartTable() {
                                         </td>
                                         <td className="">
                                             <div className="flex flex-row justify-between h-10 w-32 bg-gray-200 rounded-full">
-                                                <div onClick={quantityDecrease} className="h-inherit w-10 py-2 bg-gray-300 rounded-full text-center cursor-pointer hover:bg-gray-400 duration-200">
+                                                <div onClick={() => quantityDecrease(item?.id)} className="h-inherit w-10 py-2 bg-gray-300 rounded-full text-center cursor-pointer hover:bg-gray-400 duration-200">
                                                     <p className="font-bold">-</p>
                                                 </div>
                                                 <p className="py-2 font-bold">{item?.quantity}</p>
-                                                <div onClick={quantityIncrease} className="h-inherit w-10 py-2 bg-gray-300 rounded-full text-center cursor-pointer hover:bg-gray-400 duration-200">
+                                                <div onClick={() => quantityIncrease(item?.id)} className="h-inherit w-10 py-2 bg-gray-300 rounded-full text-center cursor-pointer hover:bg-gray-400 duration-200">
                                                     <p className="font-bold">+</p>
                                                 </div>
                                             </div>
@@ -73,7 +73,7 @@ function CartTable() {
                                         <td className="text-right">
                                             <button
                                                 className="button-admin bg-red-400 hover:bg-red-600 duration-200"
-                                                onClick={removeItem} >
+                                                onClick={() => removeItem(item?.id)} >
                                                 Delete
                                             </button>
                                         </td>
