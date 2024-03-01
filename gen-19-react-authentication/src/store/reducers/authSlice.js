@@ -40,6 +40,10 @@ const authSlice = createSlice({
         setUserAction(state, action) {
             console.log("userAction run")
             const { id, email, name, role } = action.payload;
+            console.log(id);
+            console.log(state);
+            console.log(state.token);
+            console.log(state.user);
             state.user.id = id;
             state.user.email = email;
             state.user.name = name;
