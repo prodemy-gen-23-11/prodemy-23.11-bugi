@@ -9,7 +9,7 @@ function CheckoutPage() {
     return (
         <>
             <Content>
-                <h1>Hello {user.name} from checkout page!</h1>
+                <h1>Hello {user.role}: {user.name} from checkout page!</h1>
             </Content>
         </>
     )

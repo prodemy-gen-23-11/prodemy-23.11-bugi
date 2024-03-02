@@ -34,6 +34,7 @@ function LoginPage() {
             .post("http://localhost:3000/login", data)
             .then((res) => {
                 console.log("Res run")
+                console.log(data);
                 console.log(res)
                 console.log(res.data)
                 const { accessToken, user } = res.data;

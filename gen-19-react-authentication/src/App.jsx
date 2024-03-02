@@ -17,19 +17,19 @@ function App() {
   return (
     <>
       <Routes>
-        {/* <Route element={<GuestRoutes />}> */}
+        <Route element={<GuestRoutes />}>
           <Route path="/login" element={<LoginPage />} />
-        {/* </Route> */}
+        </Route>
 
-        {/* <Route element={<UserRoutes />}> */}
+        <Route element={<UserRoutes />}>
           <Route path="/checkout" element={<CheckoutPage />} />
-        {/* </Route> */}
+        </Route>
 
-        {/* <Route element={<AdminRoutes />}> */}
+        <Route element={<AdminRoutes />}>
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/admin/newProduct" element={<FormPage />} />
           <Route path="/admin/newProduct/:id" element={<FormPage />} />
-        {/* </Route> */}
+        </Route>
 
         <Route path="/" element={<HomePage />} />
         <Route path="/detail/:id" element={<DetailPage />} />

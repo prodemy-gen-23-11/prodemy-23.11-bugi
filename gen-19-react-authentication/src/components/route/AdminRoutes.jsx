@@ -9,5 +9,5 @@ export default function AdminRoutes() {
         return <Outlet />;
     }
     alert("You don't have the permission to access this page!");
-    return <Navigate to="/home" />;
+    return <Navigate to="/" />;
 }

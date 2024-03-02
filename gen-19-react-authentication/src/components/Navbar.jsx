@@ -14,6 +14,7 @@ function Navbar() {
 
     const user = useSelector((state) => state.auth.user);
     const isLoggedIn = useSelector((state) => state.auth.token !== "");
+    const isAdmin = useSelector((state) => isLoggedIn && state.auth.user.role === "admin");
     const { cartData } = useSelector((state) => state.cart);
 
     const onClickLogin = () => {
@@ -23,6 +24,10 @@ function Navbar() {
     const onClickLogout = () => {
         dispatch(resetAuthAction());
         navigate("/login");
+    }
+
+    const onClickRedirectAdmin = () => {
+        navigate("/admin");
     }
 
     useEffect(() => setCartItem(cartData?.length));
@@ -53,26 +58,34 @@ function Navbar() {
                     </form>
                     <div onClick={() => setShowFloatMenu(!showFloatMenu)} className="relative flex flex-row items-center mr-2 group cursor-pointer">
                         <UserIcon className="inline-block h-7 w-7 text-sky-600 group-hover:scale-110 duration-300" />
-                        <a className="text-xl text-sky-600 px-2" href="#">
-                            {/* {isLoggedIn ? "Hi, " + user.name : "Hi, Guest"} */}
-                            Account
-                        </a>
+                        <p className="text-xl text-sky-600 px-2" href="#">
+                            {isLoggedIn ? "Hi, " + user.name : "Hi, Guest"}
+                        </p>
                         {showFloatMenu && (
-                            <div className="absolute w-80 bg-white -left-28 top-10 border rounded-lg drop-shadow-md z-50">
-                                <div className="flex flex-row justify-between items-center py-2 px-4">
-                                    {/* {isLoggedIn ? (
-                                        <>
-                                            <p>Hello {user.name}, you are logged in!</p>
-                                            <button onClick={onClickLogout} className="py-1 px-4 rounded-lg bg-gray-400 text-zinc-50 hover:bg-gray-500">Logout?</button>
-                                        </>
-                                    ) : (
-                                        <> */}
-                                            <p>Hello guest, you aren't logged in!</p>
-                                            <button onClick={onClickLogin} className="py-1 px-4 rounded-lg bg-gray-400 text-zinc-50 hover:bg-gray-500">Login</button>
-                                        {/* </>
-                                    )} */}
+                            <>
+                                <div className="absolute w-80 bg-white -left-28 top-10 py-2 border rounded-lg drop-shadow-md z-50">
+                                    <div className="flex flex-row justify-between items-center px-4">
+                                        {isLoggedIn ? (
+                                            <>
+                                                <p>Hello {user.name}, you are logged in!</p>
+                                                <button onClick={onClickLogout} className="py-1 px-4 rounded-lg bg-gray-400 text-zinc-50 hover:bg-gray-500 duration-300">Logout?</button>
+                                            </>
+                                        ) : (
+                                            <>
+                                                <p>Hello guest, you aren't logged in!</p>
+                                                <button onClick={onClickLogin} className="py-1 px-4 rounded-lg bg-gray-400 text-zinc-50 hover:bg-gray-500 duration-300">Login</button>
+                                            </>
+                                        )}
+                                    </div>
+                                    {isAdmin ? (
+                                        <div className="pt-2 text-center">
+                                            <button onClick={onClickRedirectAdmin} className="py-1 px-4 rounded-lg bg-sky-400 text-zinc-50 hover:bg-sky-500 duration-300">
+                                                Go to Admin page
+                                            </button>
+                                        </div>
+                                    ) : null}
                                 </div>
-                            </div>
+                            </>
                         )}
                     </div>
                     <Link to="/cart">
@@ -84,7 +97,7 @@ function Navbar() {
                             ) : null}
 
                             <CartIcon className="inline-block h-6 w-6 text-sky-600 group-hover:scale-110 duration-300 z-10" />
-                            <a className="text-xl text-sky-600 px-2" href="#">Cart</a>
+                            <p className="text-xl text-sky-600 px-2">Cart</p>
                         </div>
                     </Link>
                 </div>
